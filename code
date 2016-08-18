@@ -1,0 +1,200 @@
+<!-- Save this HTML file and set it as your browser startpage e.g. -->
+<!-- This page is relatively reponsive now, using CSS3 flexbox -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  	<!--
+	        .---------------.
+	       /MMMMMMMdbMMMMMMMM\
+	       /MMMMMMMdbMMMMMMMM\
+	       /MMMMMMMdbMMMMMMMM\
+	        /MMMMMMdbMMMMMMMM\
+	        /MMMMMMdbMMMMMMM\
+	        /MMMMMMbdMMMMMMM\
+	/MMMM   MMMMMMMb dMMMMMMM. ,MM
+	/MMMM  MMMMMMMMb dMMMMMMMM\ `MM
+	.MMMMMMMMMMMMMM`  `\MMMMMMM.MMb
+	  `MMMMMMMMMM´       `MMMMMMMb
+	   `--------´         `------´
+	-->
+  
+  <title>
+    フロントページ
+  </title>
+
+  <!-- META -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <!-- CLOCK -->
+  <script type="text/javascript">
+    function GetClock(){
+    var d=new Date();
+    var nhour=d.getHours(),nmin=d.getMinutes();
+    if(nmin<=9) nmin="0"+nmin
+    document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+    }
+    window.onload=function(){
+    GetClock();
+    setInterval(GetClock,1000);
+    }
+  </script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic);
+    * {
+      font-family: 'Roboto';
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      background: url('http://i.imgur.com/a2PBUC1.jpg'); /* PAGE BACKGROUND PICTURE, REMOVE THIS LINE IF YOU WANT TO USE A SOLID BG COLOR */
+      background-color: #9F1749; /* PAGE BACKGROUND COLOR */
+      background-position: bottom bottom;
+      background-size: 100%;
+    }
+    .main {
+      width: 68%;
+      height: 50%;
+      left: 18%;
+      position: absolute;
+      top: 25%;
+    }
+    .child {
+      display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    }
+    .wrapper {
+      -webkit-flex: 1 0 15%;
+    flex: 1 0 15%;
+      height: 280px;
+      width: 262px;
+      margin: 20px;
+      margin-bottom: 80px;
+    }
+    @media only screen and (max-width: 900px) {
+      .wrapper {
+        -webkit-flex: 1 0 30%;
+        flex: 1 0 30%;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .wrapper {
+        -webkit-flex: 1 0 50%;
+        flex: 1 0 50%;
+      }
+    }
+    .header {
+      text-align: center;
+      border-top: 5px solid rgba(159,23,73,0.1);
+      border-right: 5px solid rgba(159,23,73,0.1);
+      border-left: 5px solid rgba(159,23,73,0.1);
+      height: 55px;
+      line-height: 54px;
+      background: rgba(228,231,236,0.6); //* BOX HEADER BACKGROUND *//
+      font-weight: 900;
+      margin: 0;
+      color: #DF2353;
+      font-size: 24px;
+      font-family: 'Noto Sans', sans-serif;
+      margin-bottom: -15px;
+    }
+    ul {
+      width: 100%;
+      background: rgba(42,54,59, 0.6); //* BOX BODY BACKGROUND *//
+      border: 5px solid rgba(159,23,73,0.1);
+      float: left;
+      padding: 20px 0px 20px 0px;
+    }
+    li {
+      padding: 10px;
+      font-size: 1.25vw;
+      text-align: center;
+      font-weight: 300;
+      list-style: none;
+    }
+    li a {
+      color: #fff; //* BODY FONT COLOR *//
+      text-decoration: none;
+      cursor: pointer;
+    }
+    li a:hover {
+      color: #F1C1CF;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    #clockbox {
+      position: absolute;
+      text-align: center;
+      top: 90%;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      font-size: 48px;
+      color:#E4E7EC; //* CLOCK FONT COLOR *//
+    }
+    @media only screen and (max-width: 900px) {
+      #clockbox {
+        top: 0;
+        margin-top: 40px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <div class="child">
+      <div class="wrapper">
+        <div class="header">タイム</div>
+        <ul>
+          <li><a href="https://boards.4chan.org/g/" target="_blank">/g/</a> <a href="https://boards.4chan.org/lit/" target="_blank">/lit/</a> <a href="https://boards.4chan.org/gd/" target="_blank">/gd/</a></li>
+          <li><a href="https://facebook.com" target="_blank">facebook</a></li>
+          <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+          <li><a href="https://aaf.latrobe.edu.au/idp/profile/SAML2/POST/SSO;jsessionid=1aronmdb7aswo1tsqdsn56qxw0?execution=e1s1" target="_blank">LMS</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">ワーク</div>
+        <ul>
+          <li><a href="https://github.com" target="_blank">Github</a></li>
+          <li><a href="https://www.eff.org/" target="_blank">EFF</a></li>
+          <li><a href="https://www.howtogeek.com/" target="_blank">HTG</a></li>
+          <li><a href="https://www.codecademy.com/learn" target="_blank">Code Academy</a></li>
+          <li><a href="http://null-byte.wonderhowto.com/" target="_blank">Null-Byte</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">ツール</div>
+        <ul>
+          <li><a href="https://thepiratebay.org/" target="_blank">TPB</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+          <li><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></li>
+          <li><a href="https://soundcloud.com/" target="_blank">Soundcloud</a></li>
+          <li><a href="https://feedly.com/i/welcome" target="_blank">feedly</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">タイム</div>
+        <ul>
+          <li><a href="http://www.ebay.com.au/" target="_blank">ebay</a></li>
+          <li><a href="https://best.aliexpress.com/?aff_platform=aaf&sk=2jURrVFYv%3A&cpt=1471493462251&aff_trace_key=4445797934d24adea5e8b2f89371bdf2-1471493462251-09480-2jURrVFYv" target="_blank">AliExpress</a></li>
+          <li><a href="http://www.asos.com/au/?channelref=paid+search&affid=16620&ppcadref=410186683|27299399563|aud-200564873083:kwd-120116900&gclid=CjwKEAjwltC9BRDRvMfD2N66nlISJACq8591yN1Iy8kA9e85lCr4Fd6Pi9KS4lZlfEh7nFBrpFgrIxoCGRfw_wcB&gclsrc=aw.ds" target="_blank">asos</a></li>
+          <li><a href="http://www.redbubble.com/?SSAID=414501&utm_source=shareasale&utm_medium=affiliates&utm_campaign=banner" target="_blank">redbubble</a></li>
+          <li><a href="http://www.wired.com/" target="_blank">wired</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="clockbox" style=""></div>
+
+</body>
+</html>
