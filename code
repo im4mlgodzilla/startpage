@@ -136,27 +136,27 @@
   <div class="main">
     <div class="child">
       <div class="wrapper">
-        <div class="header">タイム</div>
+        <div class="header">-</div>
         <ul>
           <li><a href="https://boards.4chan.org/g/" target="_blank">/g/</a> <a href="https://boards.4chan.org/lit/" target="_blank">/lit/</a> <a href="https://boards.4chan.org/gd/" target="_blank">/gd/</a></li>
           <li><a href="https://facebook.com" target="_blank">facebook</a></li>
           <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
-          <li><a href="https://aaf.latrobe.edu.au/idp/profile/SAML2/POST/SSO;jsessionid=1aronmdb7aswo1tsqdsn56qxw0?execution=e1s1" target="_blank">LMS</a></li>
+          <li><a href="https://lms.latrobe.edu.au/login/index.php" target="_blank">LMS</a></li>
           <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
         </ul>
       </div>
       <div class="wrapper">
-        <div class="header">ワーク</div>
+        <div class="header">-</div>
         <ul>
           <li><a href="https://github.com" target="_blank">Github</a></li>
           <li><a href="https://www.eff.org/" target="_blank">EFF</a></li>
-          <li><a href="https://www.howtogeek.com/" target="_blank">HTG</a></li>
+          <li><a href="https://www.defcon.org/" target="_blank">DEF CON</a></li>
           <li><a href="https://www.codecademy.com/learn" target="_blank">Code Academy</a></li>
           <li><a href="http://null-byte.wonderhowto.com/" target="_blank">Null-Byte</a></li>
         </ul>
       </div>
       <div class="wrapper">
-        <div class="header">ツール</div>
+        <div class="header">-</div>
         <ul>
           <li><a href="https://thepiratebay.org/" target="_blank">TPB</a></li>
           <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
@@ -166,7 +166,7 @@
         </ul>
       </div>
       <div class="wrapper">
-        <div class="header">タイム</div>
+        <div class="header">-</div>
         <ul>
           <li><a href="http://www.ebay.com.au/" target="_blank">ebay</a></li>
           <li><a href="https://best.aliexpress.com/?aff_platform=aaf&sk=2jURrVFYv%3A&cpt=1471493462251&aff_trace_key=4445797934d24adea5e8b2f89371bdf2-1471493462251-09480-2jURrVFYv" target="_blank">AliExpress</a></li>
